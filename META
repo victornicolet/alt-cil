@@ -1,4 +1,4 @@
-description = "C Intermediate Language"
+description = "C Intermediate Language Mod"
 requires = "unix str num"
 version = "@CIL_VERSION@"
 archive(byte) = "cil.cma"

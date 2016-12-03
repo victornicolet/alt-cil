@@ -1,3 +1,6 @@
+This repository is a fork from the CIL project, with minor modifications
+for personal needs.
+
 C Intermediate Language (CIL)
 ============================
 
@@ -63,7 +66,7 @@ instance in the OCaml toplevel using [findlib][]:
     [...]
     # #require "cil";;
     [...]
-    # Cil.cilVersion;;           
+    # Cil.cilVersion;;
     - : string = "1.7.3"
 
 
@@ -89,3 +92,8 @@ Ressources
 * [Bug tracker](http://sourceforge.net/p/cil/bugs/)
 
 CIL is maintained by Gabriel Kerneis <gabriel@kerneis.info>
+
+Added features
+--------------
+- Added a '''vistmp''' field in the variable info, set to true if the
+  variables has been created as a temporary by Cil.
