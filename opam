@@ -8,7 +8,8 @@ bug-reports: "http://sourceforge.net/p/cil/bugs"
 license: "BSD"
 dev-repo: "https://github.com/victornicolet/faithfulCil"
 build: [
-  ["./configure"]
+  ["FORCE_PERL_PREFIX=1"]
+  ["./configure --prefix=`opam config var prefix`"]
   [make]
 ]
 install: [sudo make "install"]
