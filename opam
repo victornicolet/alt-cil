@@ -1,0 +1,16 @@
+opam-version: "1.2"
+name: "alt-cil"
+version: "1.7.3"
+maintainer: "Name <email>"
+author: "Gabriel Kerneis <gabriel@kerneis.info>"
+homepage: "http://kerneis.github.io/cil/"
+bug-reports: "http://sourceforge.net/p/cil/bugs"
+license: "BSD"
+dev-repo: "https://github.com/victornicolet/faithfulCil"
+build: [
+  ["./configure"]
+  [make]
+]
+install: [sudo make "install"]
+remove: ["ocamlfind" "remove" "alt-cil"]
+depends: "ocamlfind & ocamlbuild"
